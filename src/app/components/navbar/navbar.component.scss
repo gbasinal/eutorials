@@ -1,0 +1,15 @@
+@import '~src/scss/functions';
+@import '~src/scss/variable';
+@import '~src/scss/mixins';
+
+.navbar-container {
+    display: block;
+    padding: em(25);
+    max-height: em(150);
+    .navbar-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

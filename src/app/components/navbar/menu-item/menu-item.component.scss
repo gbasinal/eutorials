@@ -1,0 +1,43 @@
+
+@import '~src/scss/functions';
+@import '~src/scss/variable';
+@import '~src/scss/mixins';
+
+.menu-item-container{
+     >.menu-item-wrapper{
+         display: flex;
+        .menu-item {
+            list-style-type: none;
+            padding: 0 em(10);
+            &:first-child(){
+                padding-left: 0;
+            }
+            &:last-child(){
+                padding-right: 10px;
+            }
+            a{
+                @include textStyle($color: $black, $lspace : 1 )
+            }
+            &.active {
+                
+                a{
+                    color: $active;
+                    border-bottom: 1.5px solid $active;
+                    padding-bottom: em(5);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .profile {
+        .profile-item-container {
+            display: none;
+        }
+        &.active {
+            
+            .profile-item-container {
+                display: block;
+            }
+        }
+    }
+}
