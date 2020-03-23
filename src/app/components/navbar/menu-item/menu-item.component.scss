@@ -4,7 +4,7 @@
 @import '~src/scss/mixins';
 
 .menu-item-container{
-     >.menu-item-wrapper{
+     .menu-item-wrapper{
          display: flex;
         .menu-item {
             list-style-type: none;
@@ -16,28 +16,53 @@
                 padding-right: 10px;
             }
             a{
-                @include textStyle($color: $black, $lspace : 1 )
-            }
-            &.active {
-                
-                a{
-                    color: $active;
-                    border-bottom: 1.5px solid $active;
-                    padding-bottom: em(5);
-                    font-weight: 600;
+                @include textStyle($color: $black, $lspace : 1 );
+                &:hover {
+                    text-decoration: none;
                 }
             }
-        }
-    }
-    .profile {
-        .profile-item-container {
-            display: none;
-        }
-        &.active {
-            
-            .profile-item-container {
-                display: block;
+            &:not(.profile){               
+
+                &.active, &:hover {
+                
+                    a{
+                        @include activeState();
+                    }
+                }
+             
             }
+            &.profile {
+                .profile-item-container {
+                    display: none;
+                }
+                &.active {
+                    > a {
+                        @include activeState();
+                        &:hover {
+                            @include activeState();
+                        }
+                    }
+                    .profile-item-container {
+                        display: block;
+                        margin-top: em(15);
+                        position: absolute;
+
+                        ul{
+                            padding: 0;
+                            li {
+                                list-style-type: none;
+                                &:hover {
+                                    a{
+                                        @include activeState($border: 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
+
 }

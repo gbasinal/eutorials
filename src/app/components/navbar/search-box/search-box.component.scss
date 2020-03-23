@@ -1,0 +1,32 @@
+@import '~src/scss/functions';
+@import '~src/scss/variable';
+@import '~src/scss/mixins';
+
+
+
+.search-box-container {
+    .search-box-wrapper {
+        .search-input {
+            border: 0;
+            border-bottom: 1px solid $black;
+            border-radius: 0;
+            padding-left:0;
+            font-family: 'Raleway', sans-serif;
+            @include textStyle($color: $black, $lspace: .51 );
+            &::placeholder {
+                opacity: .6;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .input-group-append {
+            border-bottom: 1px solid $black;
+            .input-group-text {
+                background-color: transparent;
+                border: 0;
+            }
+        }
+    }
+}
