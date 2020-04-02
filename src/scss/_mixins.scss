@@ -1,0 +1,19 @@
+
+$base : 16;
+$base-height : 22.5;
+@import '~src/scss/functions';
+
+@mixin textStyle( $color , $size: $base, $lspace, $lheight: $base-height , $weight: normal ) {
+    color: $color;
+    font-size: em($size);
+    letter-spacing: #{$lspace/$base}em;
+    line-height:  $lheight/$size;
+    font-weight: $weight;
+}
+
+@mixin activeState($border: 2px solid $active){
+    color: $active;
+    border-bottom: $border;
+    padding-bottom: em(5);
+    font-weight: 600;
+}

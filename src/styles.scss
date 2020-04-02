@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap');
+@import "scss/_variable.scss";
+@import "scss/_mixins.scss";
+@import "scss/_functions.scss";
+// Typography
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.171vw;
+    background-color: $white;
+}
+
+p , a , li {
+    font-family: 'Raleway', sans-serif;
+    font-size: em(16);
+    color: $black;
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
