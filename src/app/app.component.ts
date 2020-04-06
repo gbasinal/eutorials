@@ -8,4 +8,11 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   title = 'Eutorials';
+
+
+  ngOnInit() {
+    var mTop = $(".navbar-container").outerHeight();
+    $(".main-container").css("padding-top", mTop);
+  }
+
 }

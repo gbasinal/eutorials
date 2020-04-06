@@ -14,14 +14,23 @@ export class MenuItemComponent implements OnInit {
     
   }
 
-  ngOnInit(): void {
-   
+  ngOnInit() {
+
+
   }
 
+  
+
   closeMenu(){
-    if($(".hamburger").length > 0) {
-      $(".hamburger").trigger("click");
+
+
+   
+    if($(window).outerWidth() < 991){
+      if($(".hamburger").length > 0) {
+        $(".hamburger").trigger("click");
+      }
     }
+
   }
 
 

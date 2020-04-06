@@ -4,6 +4,9 @@
 @import '~src/scss/mixins';
 
 .menu-item-container{
+    @media only screen and (max-width: 991px) {
+        padding-top: em(100);
+    }
      .menu-item-wrapper{
          display: flex;
          padding: 0;
