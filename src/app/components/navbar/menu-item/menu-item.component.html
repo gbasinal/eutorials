@@ -1,14 +1,14 @@
 <div class="menu-item-container">
     <ul class="menu-item-wrapper">
-        <li class="menu-item" routerLinkActive="active">
-            <a routerLink="/home" (click)="setActive($event)">Home</a>
+        <li class="menu-item" appHoverActive="active-hover" routerLinkActive="active">
+            <a routerLink="/home" (mouseOver)="setActive($event)">Home</a>
         </li>
-        <li class="menu-item" routerLinkActive="active">
+        <li class="menu-item" appHoverActive="active-hover" routerLinkActive="active">
             <a routerLink="/about">About</a>
         </li>
-        <li class="menu-item profile " routerLinkActive="active">
+        <li class="menu-item profile " appHoverActive="active-hover" routerLinkActive="active">
             <a routerLink="/profile">Profile</a>
-            <div class="profile-item-container">
+            <div class="profile-item-container" >
                 <ul>
                     <li class="profile-item">
                         <a href="#">Account</a>

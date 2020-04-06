@@ -9,6 +9,7 @@
         .menu-item {
             list-style-type: none;
             padding: 0 em(10);
+            
             &:first-child(){
                 padding-left: 0;
             }
@@ -23,7 +24,7 @@
             }
             &:not(.profile){               
 
-                &.active, &:hover {
+                &.active, &:hover, .active-hover {
                 
                     a{
                         @include activeState();
@@ -35,7 +36,7 @@
                 .profile-item-container {
                     display: none;
                 }
-                &.active {
+                &.active,  &.active-hover {
                     > a {
                         @include activeState();
                         &:hover {
@@ -43,8 +44,8 @@
                         }
                     }
                     .profile-item-container {
-                        display: none;
-                        margin-top: em(15);
+                        display: block;
+                        padding-top: em(15);
                         position: absolute;
 
                         ul{

@@ -6,6 +6,10 @@
     display: block;
     padding: em(25);
     max-height: em(150);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     .navbar-wrapper {
         display: flex;
         width: 100%;
