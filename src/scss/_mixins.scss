@@ -17,3 +17,11 @@ $base-height : 22.5;
     padding-bottom: em(5);
     font-weight: 600;
 }
+
+@mixin bgSettings($size , $repeat , $position , $width , $height) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+    width: em($width);
+    height: em($height)
+}

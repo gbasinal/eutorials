@@ -18,9 +18,11 @@ export class MenuItemComponent implements OnInit {
    
   }
 
-  setActive(event){
-    console.log("is clicked")
-    console.log(event)
+  closeMenu(){
+    if($(".hamburger").length > 0) {
+      $(".hamburger").trigger("click");
+    }
   }
+
 
 }

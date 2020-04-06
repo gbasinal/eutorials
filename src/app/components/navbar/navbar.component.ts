@@ -16,4 +16,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setActive(event){
+    if($(".hamburger.is-active").length > 0){
+      $(".navbar-container").show();
+    }else {
+      $(".navbar-container").hide();
+    }
+  }
 }

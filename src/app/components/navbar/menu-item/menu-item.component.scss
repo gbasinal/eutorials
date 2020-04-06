@@ -6,15 +6,25 @@
 .menu-item-container{
      .menu-item-wrapper{
          display: flex;
+         padding: 0;
+         @media only screen and (max-width: 991px){
+             flex-direction: column;
+             text-align: center;
+         }
         .menu-item {
             list-style-type: none;
             padding: 0 em(10);
-            
+            @media only screen and (max-width: 991px){
+                padding: em(16) em(10);
+            }
             &:first-child(){
                 padding-left: 0;
             }
             &:last-child(){
                 padding-right: 10px;
+                @media only screen and (max-width: 991px){
+                    padding-bottom: 0;
+                }
             }
             a{
                 @include textStyle($color: $black, $lspace : 1 );
@@ -47,7 +57,11 @@
                         display: block;
                         padding-top: em(15);
                         position: absolute;
-
+                        @media only screen and (max-width: 991px){
+                            padding-top: em(30);
+                            left : 50%;
+                            transform: translateX(-50%);
+                        }
                         ul{
                             padding: 0;
                             li {

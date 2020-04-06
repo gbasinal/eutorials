@@ -1,7 +1,13 @@
-<nav class="navbar-container text-align-right">
+<nav class="navbar-container">
     <div class="navbar-wrapper">
         <app-logo ></app-logo >
         <app-menu-item ></app-menu-item>
         <app-search-box></app-search-box>
     </div>
 </nav>
+
+<div class="hamburger hamburger--squeeze" appClickActive="is-active"   (click)="setActive($event)"> 
+    <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+    </div>
+</div>
