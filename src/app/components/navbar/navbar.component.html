@@ -1,0 +1,14 @@
+<nav class="navbar-container">
+    <div class="navbar-wrapper">
+        <app-logo ></app-logo >
+        <app-search-box></app-search-box>
+        <app-menu-item ></app-menu-item>
+        
+    </div>
+</nav>
+
+<div class="hamburger hamburger--squeeze" appClickActive="is-active"   (click)="setActive($event)"> 
+    <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+    </div>
+</div>

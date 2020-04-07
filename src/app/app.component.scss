@@ -1,0 +1,14 @@
+@import '~src/scss/functions';
+@import '~src/scss/variable';
+@import '~src/scss/mixins';
+
+
+.main-container {
+    margin-left: em(20);
+    margin-right:em(20);
+    background-color: rgba(31, 32, 33, .05);
+    .main-wrapper {
+        padding: em(15);
+        height: 100vh;
+    }
+}
