@@ -2,13 +2,21 @@
 @import '~src/scss/variable';
 @import '~src/scss/mixins';
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
 
 .main-container {
     margin-left: em(20);
     margin-right:em(20);
-    background-color: rgba(31, 32, 33, .05);
+    background-color: #f9f9f9;
+
     .main-wrapper {
-        padding: em(15);
+        padding: em(50) em(25);
         height: 100vh;
     }
 }

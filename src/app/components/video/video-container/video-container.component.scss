@@ -1,0 +1,22 @@
+@import '~src/scss/functions';
+@import '~src/scss/variable';
+@import '~src/scss/mixins';
+
+
+.video-block-container {
+    width: 100%;
+    .video-block-wrapper {
+        width: 100%;
+
+        .video-category-container {
+            margin-bottom: em(25);
+        }
+        .video-content-container {
+            .video-content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
+}

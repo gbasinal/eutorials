@@ -7,11 +7,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MenuItemComponent } from './components/navbar/menu-item/menu-item.component';
 import { LogoComponent } from './components/navbar/logo/logo.component';
 import { SearchBoxComponent } from './components/navbar/search-box/search-box.component';
-import { HomeLandingComponent } from './components/home/home-landing.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { HomeLandingComponent } from './views/home/home-landing.component';
+import { AboutComponent } from './views/about/about.component';
+import { ProfileComponent } from './views/profile/profile.component';
 import { HoverActiveDirective } from './directives/hover-active.directive';
 import { ClickActiveDirective } from './directives/click-active.directive';
+import { VideoContainerComponent } from './components/video/video-container/video-container.component';
+import { VideoContentComponent } from './components/video/video-content/video-content.component';
+import { AdminComponent } from './views/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ClickActiveDirective } from './directives/click-active.directive';
     AboutComponent,
     ProfileComponent,
     HoverActiveDirective,
-    ClickActiveDirective
+    ClickActiveDirective,
+    VideoContainerComponent,
+    VideoContentComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

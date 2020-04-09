@@ -6,10 +6,7 @@
     display: block;
     padding: em(25);
     max-height: em(150);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+
     background-color: white;
     @media only screen and (max-width: 991px){
         max-height: 100%;
